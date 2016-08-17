@@ -462,5 +462,6 @@
         <script src="assets/js/unslider-min.js"></script>
 
         <script src="Materialize/templates/parallax-template/js/init.js"></script>
+        <script src="Materialize/templates/parallax-template/js/smooth-scroll.js"></script>
       </body>
       </html>

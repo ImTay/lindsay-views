@@ -86,19 +86,6 @@
   });
 
   //enable smooth scroll
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
-
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-       $('html,body').animate({
-         scrollTop: target.offset().top - 56
-       }, 700);
-       return false;
-      }
-    }
-  });
   //enable slider (image slider)
   $(document).ready(function(){
     $('.slider').slider({full_width: true});
@@ -118,5 +105,9 @@
   ];
   Materialize.scrollFire(options);
 
+  $( document ).ready(function(){
+    $('.collapsible').collapsible();
+    $('ul.tabs').tabs();
+  });
 }); // end of document ready
 })(jQuery); // end of jQuery name space
